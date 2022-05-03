@@ -1,6 +1,6 @@
 ### Scheduling code on Init.d with PLCnext ###
 
-##**Please read all instructions CAREFULLY. There are known "gotchas" that are listed in the instructions.**##
+##Please read all instructions CAREFULLY. There are known "gotchas" that are listed in the instructions.##
 
 ## 1. Installation of example
 1. Download all files onto your PC, then connect to the PLCnext via WinSCP or your favorite SSH client.
