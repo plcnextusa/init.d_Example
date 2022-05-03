@@ -14,12 +14,4 @@ chmod +x install.sh
 
 Once the script returns "Install Complete", the init.d service is installed and running. 
 
-## 3. Using the Trending page
-On startup, the trending page will display the last 24 hours worth of data from the data logger.
-**NOTE: If no URL shows up for the ```trendingURL``` tag, there is no database for the trending page to display. Create the Data Log session first!**
-
-To choose the historical data you would like to view, select a Start Date and End Date for the tags and click Submit.
-
-The Trending page will then load in the variables data within that time frame.
-
-The Trending page also has a Zoom and Pan function. To zoom into the graph, simply zoom in with your mouse. To pan, click and drag in the direction you would like to pan.
+## 3. Modifying the init.d service
