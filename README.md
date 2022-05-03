@@ -28,10 +28,12 @@ Once the script returns "Install Complete", the init.d service is installed and 
   b. These lines **must** be modified to match the location of your script (DIR), name of your script (DAEMON), and name of your sevice (DAEMON_NAME).
   c. (Optional) If you are making modifications to the filesystem or reading files that require elevated permissions, change the below line:
   ```
-  DAEMON_USER=admin
+  # Change the uuser that runs the script if accessing files. Otherwise keep as admin.
+DAEMON_USER=admin
   ```
   To:
   ```
+  # Change the uuser that runs the script if accessing files. Otherwise keep as admin.
   DAEMON_USER=root
   ```
   To prevent any issues with bad permissions. **If you do this, you must make sure the init.d file and your Python script are executable as root**
