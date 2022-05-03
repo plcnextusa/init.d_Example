@@ -15,6 +15,7 @@ DIR=/opt/plcnext
 DAEMON=$DIR/helloworld.py
 DAEMON_NAME=hello
 
+# Change the uuser that runs the script if accessing files. Otherwise keep as admin.
 DAEMON_USER=admin
 
 # The process ID of the script when it runs is stored here:
