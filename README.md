@@ -3,7 +3,7 @@ This is an example init.d code service.
 
 ## 1. Installation of example
 1. Download all files onto your PC, then connect to the PLCnext via WinSCP or your favorite SSH client.
-2. Copy all files to the `````/opt/plcnext/````` directory on the PLCnext.
+2. Copy this repo to the `````/opt/plcnext/````` directory on the PLCnext.
 3. Log onto the PLCnext via PuTTY or your favorite SSH client.
 4. Log in as the root user.
 5. Run the below commands:
