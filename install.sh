@@ -2,20 +2,16 @@
 
 echo "Starting install process.... Please wait..."
 
-echo "Moving dependencies"
-cp -a /opt/plcnext/public/dependencies/. /usr/lib/python3.8/site-packages/
-rm -r /opt/plcnext/public/dependencies/
-
 echo "Changing permissions for execution"
-chmod +x /opt/plcnext/trend.py
-chmod +x /opt/plcnext/trend.sh
+chmod +x /opt/plcnext/helloworld.py
+chmod +x /opt/plcnext/python.sh
 
 echo "Setting up init.d"
-cp -a /opt/plcnext/trend.sh /etc/init.d/
+cp -a /opt/plcnext/python.sh /etc/init.d/
 cd /etc/init.d/
-update-rc.d trend.sh defaults
-./trend.sh start
-rm -r /opt/plcnext/trend.sh
+update-rc.d python.sh defaults
+./python.sh start
+rm -r /opt/plcnext/python.sh
 
 echo "Removing residual files"
 cd /opt/plcnext/
