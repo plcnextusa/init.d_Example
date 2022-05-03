@@ -1,4 +1,4 @@
-### Scheduling code on Init.d with PLCnext ###
+# Scheduling code on Init.d with PLCnext #
 
 ## **Please read all instructions CAREFULLY. There are known "gotchas" that are listed in the instructions.** ##
 
