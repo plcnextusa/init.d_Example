@@ -15,7 +15,7 @@ chmod +x install.sh
 
 Once the script returns "Install Complete", the init.d service is installed and running. Go to ````` /opt/plcnext/logs/hello.log ````` to see the example Python script running. 
 
-## 3. Modifying the init.d service for your application
+## 2. Modifying the init.d service for your application
 1. The init.d file (python.sh in the example)
   a. Inside the init.d file, you will see these lines of code:
   ```
