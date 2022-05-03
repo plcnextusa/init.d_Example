@@ -1,4 +1,4 @@
-# Scheduling code on Init.d with PLCnext #
+# Scheduling code on init.d with PLCnext #
 
 ## **Please read all instructions CAREFULLY. There are known "gotchas" that are listed in the instructions.** ##
 
@@ -16,7 +16,8 @@ chmod +x install.sh
 Once the script returns "Install Complete", the init.d service is installed and running. Go to ````` /opt/plcnext/logs/hello.log ````` to see the example Python script running. 
 
 ## 2. Modifying the init.d service for your application
-1. The init.d file (python.sh in the example)
+### The init.d file (python.sh in the example) ###
+
   a. Inside the init.d file, you will see these lines of code:
   ```
   # Change the next 3 lines to suit where you install your script and what you want to call it
@@ -34,7 +35,8 @@ Once the script returns "Install Complete", the init.d service is installed and 
   DAEMON_USER=root
   ```
   To prevent any issues with bad permissions. **If you do this, you must make sure the init.d file and your Python script are executable as root**
-2. The script (helloworld.py in the example)
+### The script (helloworld.py in the example) ###
+
   a. When changing the Python script to your script of choice, make sure the script will run by bashing it.
   Example:
   ```
