@@ -61,7 +61,7 @@ To remove your own code service, make sure you replace the name of the init.d fi
   # Change the user that runs the script if accessing files. Otherwise keep as admin.
   DAEMON_USER=root
   ```
-  To prevent any issues with bad permissions. **If you do this, you must make sure the init.d file and your Python script are executable as root!**
+  **If you do this, you must make sure the init.d file and your Python script are executable as root!**
 ### The script (helloworld.py) ###
 
   1. When changing the Python script to your script of choice, make sure the script will run without errors by bashing it:
