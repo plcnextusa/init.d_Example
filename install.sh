@@ -18,5 +18,5 @@ cd /opt/plcnext/
 rm -r README.md
 rm -r install.sh
 
-echo "Log file for errors is trending.log in the /opt/plcnext/logs folder."
+echo "Log file for errors is hello.log in the /opt/plcnext/logs folder."
 echo "Install complete!"
