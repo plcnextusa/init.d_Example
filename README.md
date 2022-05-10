@@ -53,12 +53,12 @@ To remove your own code service, make sure you replace the name of the init.d fi
   
   3. (Optional) If you are making modifications to the filesystem or reading files that require elevated permissions, change the below line:
   ```
-  # Change the uuser that runs the script if accessing files. Otherwise keep as admin.
+  # Change the user that runs the script if accessing files. Otherwise keep as admin.
   DAEMON_USER=admin
   ```
   To:
   ```
-  # Change the uuser that runs the script if accessing files. Otherwise keep as admin.
+  # Change the user that runs the script if accessing files. Otherwise keep as admin.
   DAEMON_USER=root
   ```
   To prevent any issues with bad permissions. **If you do this, you must make sure the init.d file and your Python script are executable as root!**
