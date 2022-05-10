@@ -15,7 +15,7 @@ chmod +x install.sh
 
 Once the script returns "Install Complete", the init.d service is installed and running. Go to ````` /opt/plcnext/logs/hello.log ````` to see the example Python script running. 
 
-## 2. Modifying the init.d service for your application
+## 2. Modifying the init.d example service for your application
 ### The init.d file (python.sh in the example) ###
 
   a. Inside the init.d file, you will see these lines of code:
@@ -26,6 +26,7 @@ Once the script returns "Install Complete", the init.d service is installed and 
   DAEMON_NAME=hello
   ```
   b. These lines **must** be modified to match the location of your script (DIR), name of your script (DAEMON), and name of your sevice (DAEMON_NAME).
+  
   c. (Optional) If you are making modifications to the filesystem or reading files that require elevated permissions, change the below line:
   ```
   # Change the uuser that runs the script if accessing files. Otherwise keep as admin.
